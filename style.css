@@ -118,7 +118,6 @@
 }
 
 /* nav link SNS 계정 */
-
 .nav-link2 {
   display: block;
   color: #2b00ff;
@@ -127,7 +126,6 @@
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
     border-color 0.15s ease-in-out;
 }
-
 
 /* post box 속성 */
 .postbox {
