@@ -1,0 +1,148 @@
+/* 폰트 */
+
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Sawarabi+Mincho&display=swap');
+* {
+  font-family: "Space Mono", monospace;
+}
+
+/* img */
+.img {
+        max-width: 100%; /* 최대 너비 설정 */
+        height: auto; /* 높이 자동 조정 */
+        display: block; /* 인라인 요소로 처리되는 이미지를 블록 요소로 변경 */
+        margin: auto; /* 가운데 정렬 */
+    }
+
+/* 토글 */
+
+@media (prefers-reduced-motion: reduce) {
+  .navbar-toggler {
+    transition: none;
+  }
+}
+
+.navbar-toggler {
+  padding: 0.25rem 0.75rem;
+  font-size: 0.7rem;
+  line-height: 1;
+  background-color: transparent;
+  border: 1px solid transparent;
+  border-radius: 2rem;
+  transition: box-shadow 0.15s ease-in-out;
+}
+
+.navbar-toggler:hover {
+  text-decoration: none;
+}
+.navbar-toggler:focus {
+  text-decoration: none;
+  outline: 0;
+  box-shadow: 0 0 0 0.05rem;
+}
+.navbar-toggler-icon {
+  display: inline-block;
+  width: 1rem;
+  height: 1.5rem;
+  vertical-align: middle;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+}
+
+/* nav 토글 활성화 width */
+
+@media (min-width: 768px) {
+  .navbar-expand-md {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .navbar-expand-md .navbar-nav {
+    flex-direction: column;
+  }
+  .navbar-expand-md .navbar-collapse {
+    display: flex !important;
+    width: 100%;
+  }
+  .navbar-expand-md .navbar-toggler {
+    display: none;
+  }
+}
+
+/* nav 스타일 */
+
+.bg-light {
+  background-color: transparent !important;
+}
+
+.navbar-expand-md .navbar-nav .nav-link {
+  margin-left: 0;
+  margin-right: 0;
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.navbar-brand {
+  padding-top: 0.3125rem;
+  padding-bottom: 0.3125rem;
+  font-size: 0.7rem;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.nav-link:focus,
+.nav-link:hover {
+  color: black;
+}
+
+.nav-link.disabled {
+  color: #d9d9d9;
+  pointer-events: none;
+  cursor: default;
+}
+
+.nav-link {
+  display: block;
+  padding: 0;
+  color: #585858;
+  text-decoration: none;
+  font-size: 0.7rem;
+  line-height: 0.7rem;
+  padding-bottom: 0.3rem;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out;
+}
+
+.nav-link.active {
+  color: black; /* 활성화된 링크의 색상 */
+}
+
+/* nav link SNS 계정 */
+
+.nav-link2 {
+  display: block;
+  color: #2b00ff;
+  text-decoration: none;
+  font-size: 0.7rem;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out;
+}
+
+
+/* post box 속성 */
+.postbox {
+    font-size: 0.7rem;
+}
+
+/* text box 속성 */
+.textbox {
+    margin-top: 1rem;
+    max-width: 660px;
+}
+
+/* text 속성 */
+.caption {
+  padding-top: 0.2rem;
+  padding-bottom: 1rem;
+
+}
