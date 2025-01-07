@@ -52,7 +52,7 @@ const links = document.querySelectorAll('.nav-link');
 
 // 각 링크에 클릭 이벤트 추가
 links.forEach(link => {
-    link.addEventListener('click', function(event) {
+    link.addEventListener('click', function (event) {
         // 기본 동작 방지 (페이지 리로드 방지)
         event.preventDefault();
 
@@ -61,9 +61,5 @@ links.forEach(link => {
 
         // 클릭한 링크에 active 클래스 추가
         this.classList.add('active');
-
-        // div 내용 변경 (예: AJAX로 HTML 파일 로드)
-        const contentDiv = document.getElementById('content');
-        contentDiv.innerHTML = `<h2>${this.textContent}의 내용입니다.</h2>`;
     });
 });
