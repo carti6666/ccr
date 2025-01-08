@@ -64,7 +64,3 @@ links.forEach(link => {
     });
 });
 
-document.getElementById('soundcloud-player').onload = function () {
-    document.getElementById('loading-spinner').style.display = 'none';
-    this.style.display = 'block';
-};
