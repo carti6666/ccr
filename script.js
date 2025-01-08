@@ -63,3 +63,8 @@ links.forEach(link => {
         this.classList.add('active');
     });
 });
+
+document.getElementById('soundcloud-player').onload = function () {
+    document.getElementById('loading-spinner').style.display = 'none';
+    this.style.display = 'block';
+};
