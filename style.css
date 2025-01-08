@@ -144,3 +144,20 @@
   padding-bottom: 1rem;
 
 }
+
+link-container {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.spaced-link {
+  margin-right: 16px; /* 링크 사이의 간격 */
+  text-decoration: none; /* 밑줄 제거 */
+  color: black; /* 링크 색상 */
+}
+
+.spaced-link:last-child {
+  margin-right: 0; /* 마지막 링크의 오른쪽 마진 제거 */
+}
