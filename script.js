@@ -64,3 +64,21 @@ links.forEach(link => {
     });
 });
 
+document.getElementById('soundcloud-player').onload = function () {
+    document.getElementById('loading-spinner').style.display = 'none';
+    this.style.display = 'block';
+};
+
+var observer = new MutationObserver(function (mutations) {
+    if (document.getElementById('soundcloud-player').contentDocument.readyState === 'complete') {
+        document.getElementById('loading-spinner').style.display = 'none';
+        document.getElementById('soundcloud-player').style.display = 'block';
+        observer.disconnect();
+    }
+});
+
+observer.observe(document.getElementById('soundcloud-player'), {
+    attributes: true,
+    childList: true,
+    subtree: true
+});
